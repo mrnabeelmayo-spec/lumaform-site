@@ -1,6 +1,6 @@
 # Lumaform website
 
-The portfolio site of Lumaform, seamless 4K motion loops made in code by Nabeel Ahmad.
+Live at https://lumaform-studio.netlify.app (Netlify project lumaform-studio). The portfolio site of Lumaform, seamless 4K motion loops made in code by Nabeel Ahmad.
 Netlify publishes the `site/` folder from this repository on every push to `main`; there is no build step.
 
 - `site/index.html`: the page.
