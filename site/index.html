@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumaform | Seamless 4K motion loops by Nabeel Ahmad</title>
+  <meta name="description" content="Lumaform makes seamless 4K motion loops in code: backgrounds, overlays and transitions for video editors, designers and streamers. A motion studio by Nabeel Ahmad.">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lumaform">
+  <meta property="og:title" content="Lumaform | Seamless 4K motion loops, made in code">
+  <meta property="og:description" content="Backgrounds, overlays and transitions, rendered in 4K and checked frame by frame. By Nabeel Ahmad.">
+  <meta property="og:image" content="media/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Lumaform",
+    "description": "Seamless 4K motion loops made in code: backgrounds, overlays and transitions for video.",
+    "founder": {
+      "@type": "Person",
+      "name": "Nabeel Ahmad",
+      "jobTitle": "Motion designer and web developer",
+      "sameAs": ["https://www.linkedin.com/in/mr-nabeel-ahmad", "https://nabeel.tryme.co"]
+    },
+    "sameAs": ["https://www.shutterstock.com/g/Lumaform"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#work">Skip to the clips</a>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Lumaform home">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><use href="#mark"/></svg>
+      <span>LUMAFORM</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#license">License</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="media/showreel.jpg" aria-hidden="true">
+        <source src="media/showreel.mp4" type="video/mp4">
+      </video>
+      <div class="hero-shade"></div>
+      <div class="hero-inner wrap">
+        <p class="eyebrow">Motion studio by Nabeel Ahmad</p>
+        <h1>Seamless 4K motion loops, made in code.</h1>
+        <p class="lead">Backgrounds, overlays and transitions for editors, designers and streamers. Every clip is generated with React and Remotion, rendered in 4K UHD and checked frame by frame, so it repeats with no visible jump.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#work">Browse the clips</a>
+          <a class="btn" href="https://www.shutterstock.com/g/Lumaform" target="_blank" rel="noopener">License on Shutterstock</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts wrap" aria-label="At a glance">
+      <div><strong id="clip-count">50</strong><span>clips so far</span></div>
+      <div><strong>4K UHD</strong><span>3840 x 2160 masters</span></div>
+      <div><strong>Seamless</strong><span>loops with no visible jump</span></div>
+      <div><strong>Code</strong><span>nothing filmed, no AI video</span></div>
+    </section>
+
+    <section id="work" class="wrap section">
+      <div class="section-head">
+        <h2>Work</h2>
+        <p>Watermarked 540p previews. The full 4K clips are licensed through the stock sites.</p>
+      </div>
+      <div class="chips" id="chips" role="toolbar" aria-label="Filter clips"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section id="about" class="wrap section about">
+      <div>
+        <h2>About Lumaform</h2>
+        <p>Lumaform is the motion studio of Nabeel Ahmad, a web developer in Pakistan. Each clip starts as a design idea and is built as a small program: the motion is written in React and rendered frame by frame with Remotion. Nothing is filmed or downloaded, and no AI video generator is used.</p>
+        <p>Every master is rendered in 4K UHD and checked before release for a clean loop point, smooth motion and steady brightness. Overlays come on pure black for Screen or Add blending, and the packs include a luma matte for keying.</p>
+        <p>Nabeel also builds fast WordPress websites. Need a loop in your brand colours? <a href="#contact">Get in touch</a>.</p>
+      </div>
+      <ol class="steps">
+        <li><strong>Design</strong><span>A look, a palette and a motion idea, planned before any code.</span></li>
+        <li><strong>Code</strong><span>The animation is written as React components in Remotion, so every frame is calculated, not filmed.</span></li>
+        <li><strong>Render and check</strong><span>Rendered in 4K at 30 fps, then checked for the loop seam, smoothness and brightness.</span></li>
+      </ol>
+    </section>
+
+    <section id="license" class="wrap section">
+      <div class="section-head">
+        <h2>License the 4K clips</h2>
+        <p>Every clip on this page is for sale as a 4K master.</p>
+      </div>
+      <div class="cards" id="license-cards"></div>
+    </section>
+
+    <section id="contact" class="wrap section contact">
+      <h2>Contact</h2>
+      <p>For custom loops, a site background in your colours, or a WordPress website, reach Nabeel here:</p>
+      <div class="actions" id="contact-links"></div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>&copy; <span id="year">2026</span> Lumaform by Nabeel Ahmad. Previews are watermarked 540p copies; the 4K masters are licensed through the stock sites.</p>
+  </footer>
+
+  <dialog id="viewer" aria-labelledby="viewer-title">
+    <div class="viewer-body">
+      <button class="close" type="button" aria-label="Close">&times;</button>
+      <video id="viewer-video" muted loop playsinline controls></video>
+      <div class="viewer-text">
+        <h3 id="viewer-title"></h3>
+        <p id="viewer-desc"></p>
+        <p class="viewer-tags" id="viewer-tags"></p>
+        <div class="actions" id="viewer-links"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a855f7"/><stop offset="1" stop-color="#fb923c"/>
+      </linearGradient>
+      <symbol id="mark" viewBox="0 0 32 32">
+        <circle cx="16" cy="16" r="11.5" fill="none" stroke="url(#lg)" stroke-width="3.5"/>
+        <path d="M7.5 16c3-5 6-5 8.5 0s5.5 5 8.5 0" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <script src="assets/clips.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
