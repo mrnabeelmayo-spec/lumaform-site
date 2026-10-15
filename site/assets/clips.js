@@ -5,10 +5,11 @@
 window.LUMAFORM = {
   links: {
     shutterstock: "https://www.shutterstock.com/g/Lumaform",
-    adobe: null,
+    adobe: "https://stock.adobe.com/contributor/213609615/Lumaform",
+    youtube: "https://www.youtube.com/channel/UCgudNROaTG45TNA_-L6YKJg",
     linkedin: "https://www.linkedin.com/in/mr-nabeel-ahmad",
     tryme: "https://nabeel.tryme.co",
-    email: null
+    email: "mrnabeelmayo@gmail.com"
   },
   clips: [
     ["al-50", "Stage Curtain Opener", "Red velvet curtains part, hold and close under a gold valance. Comes with a luma matte.", "tr ce", false],

@@ -113,7 +113,24 @@ p { margin: 0 0 1em; }
 .lcard strong { display: block; font: 600 1.1rem var(--head); margin-bottom: 4px; }
 .lcard span { color: var(--muted); font-size: 15px; }
 
+/* Contact */
+.contact { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
 .contact p { color: #d6d6de; }
+.form { display: grid; gap: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+.form label { display: grid; gap: 6px; color: var(--muted); font-size: 14px; }
+.form input, .form textarea {
+  width: 100%; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line);
+  background: var(--bg); color: var(--text); font: 400 16px/1.5 var(--body);
+}
+.form textarea { resize: vertical; min-height: 120px; }
+.form input:focus, .form textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.form button { justify-self: start; cursor: pointer; font-family: var(--body); }
+.form button[disabled] { opacity: .6; cursor: default; }
+.form[hidden], .hp { display: none; }
+.form-status { margin: 12px 0 0; color: var(--muted); font-size: 15px; }
+.form-status:empty { display: none; }
+.form-status.ok { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; color: var(--text); }
+.form-status.err { color: #fca5a5; }
 .footer { padding: 56px 0 40px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); margin-top: 72px; }
 
 /* Viewer */
@@ -128,7 +145,7 @@ dialog::backdrop { background: rgba(5,5,8,.85); backdrop-filter: blur(3px); }
 
 @media (max-width: 860px) {
   .facts { grid-template-columns: repeat(2, 1fr); }
-  .about { grid-template-columns: 1fr; gap: 24px; }
+  .about, .contact { grid-template-columns: 1fr; gap: 24px; }
 }
 @media (max-width: 560px) {
   .nav nav { gap: 14px; }

@@ -27,13 +27,18 @@
     "name": "Lumaform",
     "url": "https://lumaform-studio.netlify.app/",
     "description": "Seamless 4K motion loops made in code: backgrounds, overlays and transitions for video.",
+    "email": "mrnabeelmayo@gmail.com",
     "founder": {
       "@type": "Person",
       "name": "Nabeel Ahmad",
       "jobTitle": "Motion designer and web developer",
       "sameAs": ["https://www.linkedin.com/in/mr-nabeel-ahmad", "https://nabeel.tryme.co"]
     },
-    "sameAs": ["https://www.shutterstock.com/g/Lumaform"]
+    "sameAs": [
+      "https://www.shutterstock.com/g/Lumaform",
+      "https://stock.adobe.com/contributor/213609615/Lumaform",
+      "https://www.youtube.com/channel/UCgudNROaTG45TNA_-L6YKJg"
+    ]
   }
   </script>
 </head>
@@ -91,6 +96,7 @@
         <h2>About Lumaform</h2>
         <p>Lumaform is the motion studio of Nabeel Ahmad, a web developer in Pakistan. Each clip starts as a design idea and is built as a small program: the motion is written in React and rendered frame by frame with Remotion. Nothing is filmed or downloaded, and no AI video generator is used.</p>
         <p>Every master is rendered in 4K UHD and checked before release for a clean loop point, smooth motion and steady brightness. Overlays come on pure black for Screen or Add blending, and the packs include a luma matte for keying.</p>
+        <p>Watch the <a href="https://www.youtube.com/watch?v=0QNAC6mBy4Q" target="_blank" rel="noopener">2026 showreel on YouTube</a>.</p>
         <p>Nabeel also builds fast WordPress websites. Need a loop in your brand colours? <a href="#contact">Get in touch</a>.</p>
       </div>
       <ol class="steps">
@@ -109,9 +115,22 @@
     </section>
 
     <section id="contact" class="wrap section contact">
-      <h2>Contact</h2>
-      <p>For custom loops, a site background in your colours, or a WordPress website, reach Nabeel here:</p>
-      <div class="actions" id="contact-links"></div>
+      <div>
+        <h2>Contact</h2>
+        <p>For custom loops, a site background in your colours, a licensing question or a WordPress website, write to Nabeel by email or with the form.</p>
+        <div class="actions" id="contact-links"></div>
+      </div>
+      <div>
+        <form class="form" id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hp"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <label>Name <input name="name" type="text" autocomplete="name" required></label>
+          <label>Email <input name="email" type="email" autocomplete="email" required></label>
+          <label>Message <textarea name="message" rows="5" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send message</button>
+        </form>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </div>
     </section>
   </main>
 

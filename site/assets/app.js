@@ -140,5 +140,35 @@
   var contact = document.getElementById("contact-links");
   if (links.email) contact.appendChild(make("a", { "class": "btn btn-primary", href: "mailto:" + links.email }, links.email));
   if (links.linkedin) contact.appendChild(make("a", { "class": "btn" + (links.email ? "" : " btn-primary"), href: links.linkedin, target: "_blank", rel: "noopener" }, "LinkedIn"));
+  if (links.youtube) contact.appendChild(make("a", { "class": "btn", href: links.youtube, target: "_blank", rel: "noopener" }, "YouTube"));
   if (links.tryme) contact.appendChild(make("a", { "class": "btn", href: links.tryme, target: "_blank", rel: "noopener" }, "Profile on tryme.co"));
+
+  // Contact form: a Netlify form, sent in the background so the visitor stays on the page.
+  // Without JavaScript it still posts normally and Netlify shows its own thank-you page.
+  var form = document.getElementById("contact-form");
+  var status = document.getElementById("form-status");
+  if (form && window.fetch && window.URLSearchParams && window.FormData) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var button = form.querySelector("button[type=submit]");
+      button.disabled = true;
+      status.className = "form-status";
+      status.textContent = "Sending...";
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(form)).toString()
+      }).then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        form.reset();
+        form.hidden = true;
+        status.className = "form-status ok";
+        status.textContent = "Thanks, your message was sent. Nabeel will reply by email.";
+      }).catch(function () {
+        button.disabled = false;
+        status.className = "form-status err";
+        status.textContent = "Sorry, the message didn't send." + (links.email ? " Please email " + links.email + " instead." : " Please try again.");
+      });
+    });
+  }
 })();
