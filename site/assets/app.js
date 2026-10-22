@@ -141,7 +141,7 @@
   if (links.email) contact.appendChild(make("a", { "class": "btn btn-primary", href: "mailto:" + links.email }, links.email));
   if (links.linkedin) contact.appendChild(make("a", { "class": "btn" + (links.email ? "" : " btn-primary"), href: links.linkedin, target: "_blank", rel: "noopener" }, "LinkedIn"));
   if (links.youtube) contact.appendChild(make("a", { "class": "btn", href: links.youtube, target: "_blank", rel: "noopener" }, "YouTube"));
-  if (links.tryme) contact.appendChild(make("a", { "class": "btn", href: links.tryme, target: "_blank", rel: "noopener" }, "Profile on tryme.co"));
+  if (links.website) contact.appendChild(make("a", { "class": "btn", href: links.website, target: "_blank", rel: "noopener" }, "Nabeel's website"));
 
   // Contact form: a Netlify form, sent in the background so the visitor stays on the page.
   // Without JavaScript it still posts normally and Netlify shows its own thank-you page.
